@@ -75,7 +75,9 @@ public class App {
 
 
     private static void executarExercicio01() {
-        
+        Stack<Integer> pilha = new Stack<Integer>();
+    }
+     public static Stack<Integer> criarPilhaValoresFixos() {   
         Stack<Integer> pilha = new Stack<Integer>();
         pilha.push(10);
         pilha.push(20);
@@ -83,13 +85,16 @@ public class App {
         pilha.push(40);
         pilha.push(50);
         System.out.println(pilha);
-        pilha.pop();
+        // pilha.pop();
         System.out.println(pilha);
-        
+        return pilha;
     }
 
 
     private static void executarExercicio02() {
+        Stack<String> pilhaNomes = new Stack<String>();
+    }
+        public static Stack<String> criarPilhaNomes() {
      Stack<String> pilhaNomes = new Stack<String>();
         pilhaNomes.push("Ana");
         pilhaNomes.push("Carlos");
@@ -99,10 +104,14 @@ public class App {
 
         System.out.println("Nome no topo da pilha: " + pilhaNomes.peek());
         System.out.println("Quantide de nomes: " + pilhaNomes.size());
+        return pilhaNomes;
     }
 
 
     private static void executarExercicio03(Scanner scanner) {
+        Stack<Integer> pilhaNumeros = new Stack<Integer>();
+    }
+        public static Stack<Integer> removerTodosElementos(Stack<Integer> pilha) {
         Stack<Integer> pilhaNumeros = new Stack<Integer>();
         for (int i = 1; i <= 10; i++) {
             pilhaNumeros.push(i);
@@ -115,7 +124,7 @@ public class App {
         }
 
         System.out.println("Pilha apos remover 10 números: " + pilhaNumeros);
-      
+      return pilhaNumeros;
     }
 
 
@@ -176,6 +185,8 @@ public class App {
     }
 
     private static void executarExercicio05(Scanner scanner) {
+
+        
        Stack<Character> pilha = new Stack<Character>();
         System.out.print("Digite uma palavra: ");
         String palavra = scanner.nextLine();
